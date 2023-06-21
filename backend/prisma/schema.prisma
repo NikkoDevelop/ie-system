@@ -19,6 +19,7 @@ model User {
 model Category {
   id       Int        @id @default(autoincrement())
   title    String
+  type     String?
   expenses Expenses[]
   incomes  Income[]
 }
